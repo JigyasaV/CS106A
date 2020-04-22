@@ -33,24 +33,20 @@ Post: Needs to place along the rest of the edges
 """
 def main():
     for i in range(2):
-     place_beepers_along_edges()
-     turn_left()
-     move()
-     place_beepers_along_edges()
-     turn_left()
-     move()
-     place_beepers_along_edges()
-     put_beeper()
-     """
-     The final edge will be painted/B placed by moving in the right direction, unlike the other two
-     """
-     turn_right()
-     move()
+        place_beepers_along_edges()
+        turn_left()
+        move()
+        place_beepers_along_edges()
+        turn_left()
+        move()
+        place_beepers_along_edges()
+        put_beeper()
+        turn_right()
+        move()
     for i in range(2):
-
-     place_beepers_along_edges()
-     turn_left()
-     move()
+        place_beepers_along_edges()
+        turn_left()
+        move()
     place_beepers_along_edges()
 
 
@@ -80,6 +76,7 @@ def turn_right():
 
 if __name__ == "__main__":
     run_karel_program()
+
 
    
 
