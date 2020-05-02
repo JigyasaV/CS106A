@@ -1,0 +1,52 @@
+#Problem 1a: Subtract numbers
+python subtract_numbers.py
+def main():
+    print("This program subtracts one number from another.")
+    #Request user to input first real number
+    num1=float(input("Enter first number: "))
+    #Request user to input second real number
+    num2=float(input("Enter second number: "))
+    #Define result
+    result=num1-num2
+    #Print result
+    print("The result is "+str(result))
+ 
+
+
+if __name__ == '__main__':
+    main()
+    
+#Problem 1b: Random integer generation
+import random
+#Number of random numbers to print
+NUM_RANDOM=10
+#Min value
+MIN_RANDOM=0
+#Max value
+MAX_RANDOM=100
+
+def main():
+    #for printing 10 random integers
+    #between 0 and 100, both inclusive
+    for i in range(NUM_RANDOM):
+        r=random.randint(MIN_RANDOM,MAX_RANDOM)
+        print (r)
+        
+if __name__ == '__main__':
+    main()
+    
+#Problem1c: Liftoff!
+def main():
+    #Print numbers 10 to 1
+    #Starting from 10 and ending at 1
+    #Subtracting 1 at each step
+    number_count=11
+    for i in range(10):
+        number_count-=1
+        print(number_count)
+    #Final print Liftoff! command after 1
+    print("Liftoff!")
+
+
+if __name__ == '__main__':
+    main()
